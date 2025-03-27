@@ -1,0 +1,219 @@
+
+.estudiantes-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+}
+
+
+.estudiantes-container h2 {
+  color: #1a365d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.estudiantes-container p {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.action-group {
+  display: flex;
+  gap: 10px;
+}
+
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #4f46e5;
+  border-color: #e0e7ff;
+}
+
+.btn-secondary:hover {
+  background-color: #f5f7ff;
+  border-color: #c7d2fe;
+}
+
+.btn-logout {
+  background-color: white;
+  color: #64748b;
+  border-color: #e2e8f0;
+}
+
+.btn-logout:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Lista de estudiantes */
+.lista-alumnos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alumno-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background-color: white;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.alumno-item:hover {
+  border-color: #cbd5e1;
+}
+
+
+.asistencia-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  flex: 2;
+}
+
+.grupo-asistencia {
+  display: flex;
+  gap: 8px;
+}
+
+.grupo-asistencia label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.grupo-asistencia label:hover {
+  background-color: #f1f5f9;
+}
+
+
+.observacion-input {
+  padding: 6px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  min-width: 180px;
+  flex: 1;
+  font-size: 0.8125rem;
+  height: 36px;
+  transition: all 0.2s ease;
+}
+
+.observacion-input:focus {
+  outline: none;
+  border-color: #a5b4fc;
+  box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.2);
+}
+
+
+.student-actions {
+  display: flex;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.status-message {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.status-success {
+  color: #10b981;
+}
+
+.status-error {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .top-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .action-group {
+    width: 100%;
+  }
+  
+  .btn {
+    flex: 1;
+  }
+  
+  .alumno-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .asistencia-controls {
+    width: 100%;
+  }
+  
+  .observacion-input {
+    width: 100%;
+  }
+  
+  .student-actions {
+    width: 100%;
+  }
+}
